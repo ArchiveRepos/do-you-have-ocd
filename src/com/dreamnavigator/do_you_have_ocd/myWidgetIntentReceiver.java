@@ -25,6 +25,7 @@ public class myWidgetIntentReceiver extends BroadcastReceiver {
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.mywidgetclick);
 		remoteViews.setImageViewResource(R.id.my_widgetclick, setClickCount());
 		remoteViews.setOnClickPendingIntent(R.id.my_widgetclick, myWidgetProvider.buildButtonPendingIntent(context));
+		remoteViews.setTextViewText(R.id.notification, Integer.toString(clickCount));
 		myWidgetProvider.pushWidgetUpdate(context, remoteViews);
 	}
 

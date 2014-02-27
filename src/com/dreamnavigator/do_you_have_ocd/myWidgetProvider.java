@@ -1,11 +1,15 @@
 package com.dreamnavigator.do_you_have_ocd;
 
+import com.readystatesoftware.viewbadger.BadgeView;
+
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
+import android.app.Activity;
 import android.widget.RemoteViews;
 
 public class myWidgetProvider extends AppWidgetProvider {
@@ -18,6 +22,10 @@ public class myWidgetProvider extends AppWidgetProvider {
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds){
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.mywidgetclick);
 		remoteViews.setOnClickPendingIntent(R.id.my_widgetclick, buildButtonPendingIntent(context));
+		//View target = findViewById(R.id.my_widgetclick);
+		//BadgeView badge = new BadgeView(context, target);
+		//badge.setText("1");
+		//badge.show();
 		pushWidgetUpdate(context, remoteViews);
 	}
 	
