@@ -2,7 +2,7 @@ package com.dreamnavigator.do_you_have_ocd;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.AlertDialog;
+//import android.app.AlertDialog;
 import android.view.Menu;
 
 public class MainActivity extends Activity {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">强迫症勿点</string>
+    <string name="app_name">你有强迫症吗</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">感谢使用本产品\n请拖拽一个此程序的挂件到桌面\n不管你点多少次图标又上角的数字只增不减哟。^_^\n祝玩得愉快</string>
+ 
+    
+</resources>
